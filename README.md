@@ -11,6 +11,13 @@ We ontwikkelden bij imec City of Things samen met burgerbeweging 30 MAX! een fli
 Alle onderdelen (behalve 1 3D print) zijn gemakkelijk off the shelf te verkrijgen. Je kan ze online bestellen en zo je eigen flitsfiets 
 bouwen. 
 
+* We gebruiken een radar van Omnipresense. Deze is heel duur (bijna 180€), maar komt met een certificaat dat ie minder dan 1% fout op de metingen maakt (minder dan 1 mijl per uur fout op een meting van 130 mijl per uur). Een goed werkende radar is een vereiste om correcte en objectieve metingen uit te voeren.
+* De radar is een shield dat past op een klassieke Arduino. We gebruiken een Photon Redboard van Sparkfun. Dit bord gebruikt een wifi module van particle.io en kan ook Arduino shields ontvangen.
+* We voeden de radar met een deep cycle autobatterij. Omdat de radar en wifi samen zo'n 3 watt verbruiken is een 12V 36Ah batterij na 8 dagen volledig opgebruikt.
+* We gebruiken een combinatie van (Noco) stekkers om de batterij gemakkelijk los te koppelen van de radaropstelling.
+* De radaropstelling gebruikt een kleine buck converter om de 12V van de batterij efficiënt om te zetten naar de 5V die de radaropstelling gebruikt.
+* De radar wordt in een topcase bagagedrager bevestigd met een ge-3D-printe beugel, bouten en moeren en een montageband.
+
 | Component | Producent | Leverancier | Prijs |
 | ------------- | ------------- | --- | -----: |
 | [Topcase voor bagagedrager](https://www.decathlon.be/nl/p/topcase-voor-bagagedrager-fiets-onesecondclip/_/R-p-160375?mc=8396337&c=ZWART) | B'twin | Decathlon | €36.00 |
