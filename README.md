@@ -8,9 +8,8 @@ We ontwikkelden bij imec City of Things samen met burgerbeweging 30 MAX! een fli
 
 # Onderdelen
 
-Alle onderdelen (behalve 1 3D print) zijn gemakkelijk off the shelf te verkrijgen. Je kan ze online bestellen en zo je eigen flitsfiets bouwen. 
-
-![Off the shelf onderdelen](images/componenten.jpg)
+Alle onderdelen (behalve 1 3D print) zijn gemakkelijk off the shelf te verkrijgen. Je kan ze online bestellen en zo je eigen flitsfiets 
+bouwen. 
 
 | Component | Producent | Leverancier | Prijs |
 | ------------- | ------------- | --- | -----: |
@@ -22,6 +21,11 @@ Alle onderdelen (behalve 1 3D print) zijn gemakkelijk off the shelf te verkrijge
 | [Male to male connector](http://www.accucentrale.com/docs/webshop.asp?act=item&itemcode=GC013) | Noco | ACA | ??? |
 | [Eyelet connector](http://www.accucentrale.com/docs/webshop.asp?act=item&itemcode=GC002) | Noco | ACA | ??? |
 | [Deep cycle batterij](http://www.accucentrale.com/docs/webshop.asp?act=item&itemcode=DC36-12) | VMF | ACA | ??? |
+| Beugel | 3d print | |
+| Fiets(wrak) | | |
+| Fietsslot | | |
+| Varia ijzerwaren (montageband, bouten, moeren) | | |
 
+![Off the shelf onderdelen](images/componenten.jpg)
 
 # Bouwen
