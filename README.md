@@ -36,3 +36,30 @@ bouwen.
 ![Off the shelf onderdelen](images/componenten.jpg)
 
 # Bouwen
+
+## Radar
+
+We moeten enkele aanpassingen aanbrengen aan de radarmodule en een aantal settings in de radarmodule instellen.
+
+### Radar patchen
+
+We bereiden de radar voor zodat we hem kunnen uitlezen als een hardware serial device, zoals beschreven in de [Application Note van Omnipresense](https://omnipresense.com/wp-content/uploads/2018/11/AN-014-B_UART-and-Arduino-Support.pdf).
+
+* Zet pinheaders op de voedings- en hardware serial pinnen op de omnipresense. Let op, zet geen pinheaders op de MOSI/MISO pinnen omdat deze voor software serial storingeen zullen zorgen tijdens het gebruik.
+* Breng 3 jumperwires aan om de TX/RX en voeding van de radar naar de juiste pinnen van de Sparkfun Photon Redboard te patchen.
+  * Verbind TP41 met TP26 (TX naar juiste pin brengen)
+  * Verbind TP42 met TP25 (RX naar juiste pin brengen)
+  * Verbind VIN met 5V0 (omdat de radar 5V nodig heeft)
+
+![Radar patches](images/radarpatches.jpg)
+
+## Radar instellingen
+
+Gebruik een seriële monitor om de volgende settings van de radar in te stellen:
+* `UK` om de units van de radar in km/u in te stellen
+* `R-` om enkel de wagens die van de radar wegrijden te rapporteren
+* `R>15` om enkel snelheden van meer dan 15km/u te rapporteren (er lijkt veel noise te zijn onder 15km/u)
+* `SL` om 50000 samples per 
+* `A!` om deze settings te bewaren in de radar.
+
+Als uw radar het `A!` commando niet ondersteunt dan moet je de firmware van de radar upgraden naar de recentste firmware volgens deze [Appliation Note van Omnipresense](https://omnipresense.com/wp-content/uploads/2018/11/AN-013-B_OPS241-Code-Update.pdf).
