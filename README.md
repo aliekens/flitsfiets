@@ -55,7 +55,7 @@ We bereiden de radar voor zodat we hem kunnen uitlezen als een hardware serial d
 
 ## Radar instellingen
 
-Gebruik een seriële monitor om de volgende settings van de radar in te stellen:
+Gebruik een seriële monitor om de volgende settings van de radar in te stellen zoals in deze [Application Note van Omnipresense](https://omnipresense.com/wp-content/uploads/2018/12/AN-010-H_API_Interface.pdf):
 * `UK` om de units van de radar in km/u in te stellen
 * `R-` om enkel de wagens die van de radar wegrijden te rapporteren
 * `R>15` om enkel snelheden van meer dan 15km/u te rapporteren (er lijkt veel noise te zijn onder 15km/u)
@@ -63,3 +63,36 @@ Gebruik een seriële monitor om de volgende settings van de radar in te stellen:
 * `A!` om deze settings te bewaren in de radar.
 
 Als uw radar het `A!` commando niet ondersteunt dan moet je de firmware van de radar upgraden naar de recentste firmware volgens deze [Appliation Note van Omnipresense](https://omnipresense.com/wp-content/uploads/2018/11/AN-013-B_OPS241-Code-Update.pdf).
+
+## Software
+
+De eenvoudige firmware van de Particle Photon volgt metingen van de radar op en verstuurt deze naar de Particle cloud.
+* Omdat elk voertuig verschillende opeenvolgende metingen geeft, aggregeren we deze om 1 meting per voertuig door te sturen. Omdat we weten dat het bereik van de radar 25m is en omdat we de snelheden van de voorbijrijdende voertuigen weten, kunnen we ook achterhalen of metingen van 1 of meerdere voertuigen komt en deze bij benadering samen te voegen per voertuig. We sturen van zo'n venster aan metingen de hoogste waarde door.
+* Je kan instellingen aan de radar doorgeven met de `radarCommand` functie (bijvoorbeeld om vanop afstand de km/u instelling nog aan te passen).
+* Je kan de opstelling ook commando's geven met de `reportParameter` functie, bijvoorbeeld om de huidige wifi SSID door te geven met `wifi` parameter of om een event met testmeting (van 13.7km/u) door te geven aan de cloud met de `speed` parameter.
+
+Installatie van de software op de Photon RedBoard:
+* Gebruik de [Particle Quick Start](https://docs.particle.io/quickstart/photon/) om de Photon RedBoard aan je Particle account te hangen.
+* Flash de Photon met de code om de radar op te volgen en data naar de Particle cloud te pushen
+
+Je kan snelheden van voorbijrijdende voertuigen nu opvolgen via de Particle console:
+
+![Console screenshot](images/console.jpg)
+
+Deze data kan nu vanuit de Particle cloud doorgestuurd worden naar andere services, zoals bijvoorbeeld via webhooks of door de snelheidsmetingen op te volgeen met een script, bijvoorbeeld door eeen webhook op je events te hangen in de Particle console of door met curl alle speed events van je Particle devices op te volgen:
+
+``
+curl -sN "https://api.particle.io/v1/devices/events/speed?access_token=YOUR_PARTICLE_ACCESS_TOKEN" | YOUR_ADAPTER_CODE
+``
+
+## Voeding
+
+Gebruik een male connector, de buck converter en de barrel jack met knop om van de 12V batterij naar een 5V voeding te gaan voor de Photon Redboard
+
+## Installatie in de casing
+
+Bevestig de Photon RedBoard en de radar met M3 boutjes en moeren op de ge-3D-printte beugel.
+
+* Positioneer de beugel binnen in de case, zo ver mogelijk naar achter, door 4 M4 gaten te boren en M3 boutjes en moeren te gebruiken voor de bevestiging.
+* Installeer de batterij en de voeding in de case.
+* We bevestigen de radar met een montageband en M4 boutjees en moeren rond de batterij op de fiets. We maakten hiervoor 2 sleuven onderin de case zodat de batterij en case met de montageband goed bevestigd kan worden op de fiets.
