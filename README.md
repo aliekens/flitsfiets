@@ -25,9 +25,9 @@ bouwen.
 | [Photon Redboard](https://www.sparkfun.com/products/13321) | Sparkfun | Sparkfun | €31.36 |
 | [2.1mm barrel jack met knop](https://www.mouser.be/ProductDetail/485-1125) | Adafruit | Mouser | €2.46 |
 | [12V naar 5V buck converter](https://www.mouser.be/ProductDetail/485-1385) | Adafruit | Mouser | €10.52 |
-| [Male to male connector](http://www.accucentrale.com/docs/webshop.asp?act=item&itemcode=GC013) | Noco | ACA | ??? |
-| [Eyelet connector](http://www.accucentrale.com/docs/webshop.asp?act=item&itemcode=GC002) | Noco | ACA | ??? |
-| [Deep cycle batterij](http://www.accucentrale.com/docs/webshop.asp?act=item&itemcode=DC36-12) | VMF | ACA | ??? |
+| [Male to male connector](http://www.accucentrale.com/docs/webshop.asp?act=item&itemcode=GC013) | Noco | ACA | 9.34€ |
+| [Eyelet connector](http://www.accucentrale.com/docs/webshop.asp?act=item&itemcode=GC002) | Noco | ACA | €7.34 |
+| [Deep cycle batterij](http://www.accucentrale.com/docs/webshop.asp?act=item&itemcode=DC36-12) | VMF | ACA | €98.34 |
 | Beugel | 3d print | |
 | Fiets(wrak) | | |
 | Fietsslot | | |
