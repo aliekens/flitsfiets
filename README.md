@@ -4,7 +4,7 @@ Bouw zelf je eigen radar om undercover snelheidsmetingen van voertuigen uit te v
 
 ![De flitsfiets](images/flitsfiets.jpg)
 
-We ontwikkelden bij imec City of Things samen met burgerbeweging 30 MAX! een flitsfiets. Met deze flitsfiets kan de burgerbeweging zelf snelheidsmetingen van de voertuigen in hun buurt uitvoeren. Door objectieve data te verzamelen kunnen ze hun bezorgdheden met meer kracht aan het beleid communiceren. Met deze repository willen we iedereen in staat stellen hun eigen radar te bouwen en samen te werken aan meer respect voor de zone 30.
+We ontwikkelden bij [imec City of Things](http://imeccityofthings.be) samen met burgerbeweging 30 MAX! een flitsfiets. Met deze flitsfiets kan de burgerbeweging zelf snelheidsmetingen van de voertuigen in hun buurt uitvoeren. Door objectieve data te verzamelen kunnen ze hun bezorgdheden met meer kracht aan het beleid communiceren. Met deze repository willen we iedereen in staat stellen hun eigen radar te bouwen en samen te werken aan meer respect voor de zone 30.
 
 # Onderdelen
 
