@@ -45,7 +45,7 @@ We moeten enkele aanpassingen aanbrengen aan de radarmodule en een aantal settin
 
 We bereiden de radar voor zodat we hem kunnen uitlezen als een hardware serial device, zoals beschreven in de [Application Note van Omnipresense](https://omnipresense.com/wp-content/uploads/2018/11/AN-014-B_UART-and-Arduino-Support.pdf).
 
-* Zet pinheaders op de voedings- en hardware serial pinnen op de omnipresense. Let op, zet geen pinheaders op de MOSI/MISO pinnen omdat deze voor software serial storingeen zullen zorgen tijdens het gebruik.
+* Zet pinheaders op de voedings- en hardware serial pinnen op de omnipresense. Let op, zet geen pinheaders op de MOSI/MISO pinnen omdat deze voor software serial storingen zullen zorgen tijdens het gebruik.
 * Breng 3 jumperwires aan om de TX/RX en voeding van de radar naar de juiste pinnen van de Sparkfun Photon Redboard te patchen.
   * Verbind TP41 met TP26 (TX naar juiste pin brengen)
   * Verbind TP42 met TP25 (RX naar juiste pin brengen)
@@ -79,7 +79,7 @@ Je kan snelheden van voorbijrijdende voertuigen nu opvolgen via de Particle cons
 
 ![Console screenshot](images/console.jpg)
 
-Deze data kan nu vanuit de Particle cloud doorgestuurd worden naar andere services, zoals bijvoorbeeld via webhooks of door de snelheidsmetingen op te volgeen met een script, bijvoorbeeld door eeen webhook op je events te hangen in de Particle console of door met curl alle speed events van je Particle devices op te volgen:
+Deze data kan nu vanuit de Particle cloud doorgestuurd worden naar andere services, zoals bijvoorbeeld via webhooks of door de snelheidsmetingen op te volgen met een script, bijvoorbeeld door eeen webhook op je events te hangen in de Particle console of door met curl alle speed events van je Particle devices op te volgen:
 
 ``
 curl -sN "https://api.particle.io/v1/devices/events/speed?access_token=YOUR_PARTICLE_ACCESS_TOKEN" | YOUR_ADAPTER_CODE
