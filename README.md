@@ -17,6 +17,7 @@ bouwen.
 * We gebruiken een combinatie van (Noco) stekkers om de batterij gemakkelijk los te koppelen van de radaropstelling.
 * De radaropstelling gebruikt een kleine buck converter om de 12V van de batterij efficiënt om te zetten naar de 5V die de radaropstelling gebruikt.
 * De radar wordt in een topcase bagagedrager bevestigd met een ge-3D-printe beugel, bouten en moeren en een montageband.
+* De accu wordt opgeladen met een batterijlader. Ik heb twee batterijen zodat ze snel gewisseld kan worden. Opgelet, als de accu een te laag voltage heeft zal de radar foute data doorgeven.
 
 | Component | Producent | Leverancier | Prijs |
 | ------------- | ------------- | --- | -----: |
@@ -28,6 +29,7 @@ bouwen.
 | [Male to male connector](http://www.accucentrale.com/docs/webshop.asp?act=item&itemcode=GC013) | Noco | ACA | 9.34€ |
 | [Eyelet connector](http://www.accucentrale.com/docs/webshop.asp?act=item&itemcode=GC002) | Noco | ACA | €7.34 |
 | [Deep cycle batterij](http://www.accucentrale.com/docs/webshop.asp?act=item&itemcode=DC36-12) | VMF | ACA | €98.34 |
+| [Autobatterijlader](http://www.accucentrale.com/docs/webshop.asp?act=item&itemcode=PL-C007P) | Powerline | ACA | €45.45 |
 | Beugel | 3d print | |
 | Fiets(wrak) | | |
 | Fietsslot | | |
